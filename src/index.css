@@ -1,0 +1,209 @@
+@import "tailwindcss";
+
+/* CataVínculo - Cyber OSINT & Forensic Investigation Design System */
+
+:root {
+  --bg-primary: #040406;
+  --bg-secondary: #08090d;
+  --bg-tertiary: #0e1117;
+  --bg-glass: rgba(8, 10, 16, 0.88);
+  --bg-glass-heavy: rgba(6, 8, 12, 0.95);
+
+  --border-glass: rgba(0, 240, 255, 0.12);
+  --border-glass-hover: rgba(0, 255, 157, 0.35);
+  --border-active: #00FF9D;
+
+  --accent-emerald: #00FF9D;
+  --accent-cyan: #00F0FF;
+  --accent-amber: #F59E0B;
+  --accent-blue: #38BDF8;
+  --accent-purple: #A855F7;
+  --accent-red: #FF3366;
+
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: var(--bg-primary);
+  color: #f1f5f9;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Hacker Cyber Grid Background */
+.hacker-bg {
+  background-color: #040406;
+  background-image: 
+    linear-gradient(to right, rgba(0, 240, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 255, 157, 0.03) 1px, transparent 1px),
+    radial-gradient(circle at 50% 20%, rgba(0, 255, 157, 0.06), transparent 60%);
+  background-size: 40px 40px, 40px 40px, 100% 100%;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-primary);
+}
+
+/* Darkglass Utility Classes (Specular Glassmorphism) */
+.darkglass-panel {
+  background: linear-gradient(135deg, rgba(22, 22, 32, 0.88) 0%, rgba(10, 10, 16, 0.94) 100%);
+  backdrop-filter: blur(24px) saturate(190%);
+  -webkit-backdrop-filter: blur(24px) saturate(190%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 16px 40px -10px rgba(0, 0, 0, 0.75), inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
+}
+
+.darkglass-card {
+  background: linear-gradient(135deg, rgba(20, 20, 30, 0.85) 0%, rgba(14, 14, 20, 0.92) 100%);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 12px 30px -6px rgba(0, 0, 0, 0.65), inset 0 1px 0 0 rgba(255, 255, 255, 0.12);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.darkglass-card:hover {
+  border-color: rgba(255, 255, 255, 0.22);
+  box-shadow: 0 18px 45px -8px rgba(0, 0, 0, 0.8), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
+  transform: translateY(-1px);
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+/* React Flow Canvas Enhancements */
+.react-flow__attribution {
+  display: none !important;
+}
+
+.react-flow__edge-path {
+  stroke-width: 2;
+  transition: stroke 0.2s, stroke-width 0.2s;
+}
+
+.react-flow__edge:hover .react-flow__edge-path {
+  stroke: var(--accent-amber);
+  stroke-width: 3.5;
+  filter: drop-shadow(0 0 6px rgba(240, 161, 33, 0.6));
+}
+
+.react-flow__edge-text {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 600;
+  fill: #f1f5f9;
+}
+
+.react-flow__edge-textbg {
+  fill: #121218 !important;
+  fill-opacity: 0.95;
+  rx: 6px;
+  ry: 6px;
+  stroke: rgba(255, 255, 255, 0.08);
+  stroke-width: 1px;
+}
+
+/* Keyframes & Utility Animations */
+@keyframes pulseSubtle {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(1.02); }
+}
+
+.animate-pulse-subtle {
+  animation: pulseSubtle 3s infinite ease-in-out;
+}
+
+/* Neuroacessibilidade & Suporte a TDAH e TEA (Autismo Nível 1) */
+.reduced-motion *,
+.reduced-motion .react-flow__edge-path,
+.reduced-motion .animate-pulse,
+.reduced-motion .animate-pulse-subtle {
+  animation: none !important;
+  transition: none !important;
+}
+
+/* Modo Foco TDAH: Diminui distrações periféricas */
+.focus-active .react-flow__node:not(.selected) {
+  opacity: 0.35;
+  filter: grayscale(40%) blur(0.5px);
+  transition: opacity 0.3s ease, filter 0.3s ease;
+}
+
+.focus-active .react-flow__node.selected {
+  opacity: 1 !important;
+  transform: scale(1.03);
+  z-index: 50 !important;
+  box-shadow: 0 0 0 3px rgba(240, 161, 33, 0.8), 0 20px 40px rgba(0, 0, 0, 0.8) !important;
+}
+
+/* Modo Texto Ampliado */
+.text-large-mode {
+  font-size: 110% !important;
+}
+
+/* Botões com Ergonomia Cognitiva (Neuro-Buttons) */
+.neuro-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  transition: all 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+  min-height: 2.25rem;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  user-select: none;
+  border-width: 1px;
+}
+
+.neuro-btn:focus-visible {
+  outline: 2px solid var(--accent-amber);
+  outline-offset: 2px;
+}
+
+.neuro-btn:active {
+  transform: scale(0.97);
+}
+
+/* Cards Neuroadaptados: Delimitação e Contraste Nítidos */
+.neuro-card {
+  background: rgba(18, 18, 25, 0.94);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 12px 30px -4px rgba(0, 0, 0, 0.75);
+  border-radius: 1.25rem;
+}

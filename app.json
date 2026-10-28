@@ -1,0 +1,23 @@
+{
+  "expo": {
+    "name": "CataVínculo",
+    "slug": "catavinculo",
+    "version": "1.0.0",
+    "orientation": "default",
+    "icon": "./public/icon-512.svg",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./public/logo.svg",
+      "resizeMode": "contain",
+      "backgroundColor": "#070709"
+    },
+    "web": {
+      "favicon": "./public/logo.svg",
+      "themeColor": "#070709",
+      "backgroundColor": "#070709",
+      "display": "standalone",
+      "name": "CataVínculo — Inteligência & OSINT",
+      "shortName": "CataVínculo"
+    }
+  }
+}
