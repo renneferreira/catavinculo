@@ -74,7 +74,7 @@ export function DetailDrawer({ isOpen, onClose, data, onExpandSocio, onExpandLaw
                   }`}>
                     {isCompany ? 'Ficha Empresarial' : 'Ficha do Sócio'}
                   </span>
-                  <h3 className="text-lg font-bold text-zinc-100 mt-1 leading-snug">
+                  <h3 className="text-lg font-bold text-zinc-100 mt-1 leading-snug font-display tracking-tight">
                     {data.razaoSocial || data.nome}
                   </h3>
                   {data.nomeFantasia && (

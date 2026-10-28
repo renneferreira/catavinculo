@@ -123,7 +123,7 @@ export function CardGridView({
               onClick={() => setSelectedCategory('all')}
               className={`neuro-btn ${
                 selectedCategory === 'all' 
-                  ? 'bg-amber-400 text-black border-amber-400 font-bold' 
+                  ? 'bg-emerald-400 text-black border-emerald-400 font-bold font-mono shadow-[0_0_12px_rgba(0,255,135,0.3)]' 
                   : 'bg-zinc-900/80 text-zinc-300 border-zinc-800 hover:bg-zinc-800'
               }`}
             >
@@ -197,7 +197,7 @@ export function CardGridView({
           <section className="space-y-3">
             <div className="flex items-center gap-2">
               <Building2 className="h-5 w-5 text-blue-400" />
-              <h3 className="text-base font-bold text-zinc-100">Empresas Mapeadas ({categorized.companies.length})</h3>
+              <h3 className="text-base font-bold text-zinc-100 font-display tracking-tight">Empresas Mapeadas ({categorized.companies.length})</h3>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {categorized.companies.map((c) => {
@@ -237,7 +237,7 @@ export function CardGridView({
                       </div>
 
                       {/* Razão Social & Nome Fantasia */}
-                      <h4 className="text-sm font-bold text-white mt-3 line-clamp-2 leading-snug">
+                      <h4 className="text-sm font-bold text-white mt-3 line-clamp-2 leading-snug font-display tracking-tight">
                         {d.razaoSocial}
                       </h4>
                       {d.nomeFantasia && (
@@ -314,7 +314,7 @@ export function CardGridView({
           <section className="space-y-3">
             <div className="flex items-center gap-2">
               <Users className="h-5 w-5 text-emerald-400" />
-              <h3 className="text-base font-bold text-zinc-100">Sócios & Administradores ({categorized.partners.length})</h3>
+              <h3 className="text-base font-bold text-zinc-100 font-display tracking-tight">Sócios & Administradores ({categorized.partners.length})</h3>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {categorized.partners.map((p) => {
@@ -334,7 +334,7 @@ export function CardGridView({
                         </span>
                       </div>
 
-                      <h4 className="text-sm font-bold text-white mt-3 line-clamp-2 leading-snug">
+                      <h4 className="text-sm font-bold text-white mt-3 line-clamp-2 leading-snug font-display tracking-tight">
                         {d.nome}
                       </h4>
                       <p className="text-xs text-emerald-400 font-semibold mt-0.5">

@@ -60,7 +60,7 @@ export function SubscriptionModal({ isOpen, onClose, tokenBalance = 150, onAddTo
                 5 Dias Grátis
               </span>
             </div>
-            <h2 id="subscription-modal-title" className="text-2xl font-extrabold tracking-tight text-white mt-2">
+            <h2 id="subscription-modal-title" className="text-2xl font-extrabold tracking-tight text-white mt-2 font-display">
               Planos &amp; Tokens de Investigação
             </h2>
             <p className="text-xs text-zinc-400 mt-1">
@@ -70,7 +70,7 @@ export function SubscriptionModal({ isOpen, onClose, tokenBalance = 150, onAddTo
 
           <button
             onClick={onClose}
-            className="p-2 rounded-xl text-zinc-400 hover:text-white hover:bg-white/5 transition-colors focus-visible:ring-2 focus-visible:ring-amber-400"
+            className="p-2 rounded-xl text-zinc-400 hover:text-white hover:bg-white/5 transition-colors focus-visible:ring-2 focus-visible:ring-emerald-400"
             aria-label="Fechar modal de planos"
           >
             <X className="h-5 w-5" />
@@ -80,37 +80,37 @@ export function SubscriptionModal({ isOpen, onClose, tokenBalance = 150, onAddTo
         {/* Saldo Atual de Tokens */}
         <div className="mt-5 p-4 rounded-2xl bg-zinc-900/80 border border-white/10 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="h-10 w-10 rounded-xl bg-amber-400/20 border border-amber-400/30 flex items-center justify-center text-amber-400">
+            <div className="h-10 w-10 rounded-xl bg-emerald-400/20 border border-emerald-400/30 flex items-center justify-center text-emerald-400">
               <Zap className="h-5 w-5" />
             </div>
             <div>
               <span className="text-xs text-zinc-400 font-medium block">Seu Saldo Disponível</span>
               <div className="flex items-baseline gap-1.5">
                 <span className="text-2xl font-extrabold font-mono text-white tabular-nums">{tokenBalance}</span>
-                <span className="text-xs text-amber-300 font-semibold">Tokens Avançados</span>
+                <span className="text-xs text-emerald-300 font-semibold font-mono">Tokens Avançados</span>
               </div>
             </div>
           </div>
           <div className="text-right">
-            <span className="text-[11px] text-zinc-400 block">Renovação Mensal</span>
-            <span className="text-xs font-semibold text-emerald-400 flex items-center justify-end gap-1">
+            <span className="text-[11px] text-zinc-400 block font-mono">Renovação Mensal</span>
+            <span className="text-xs font-semibold text-emerald-400 flex items-center justify-end gap-1 font-mono">
               <Clock className="h-3 w-3" /> Ativo
             </span>
           </div>
         </div>
 
         {/* Card do Plano Starter CataVínculo */}
-        <div className="mt-6 p-6 rounded-2xl bg-gradient-to-br from-amber-500/10 via-zinc-900/90 to-zinc-900/90 border-2 border-amber-500/40 shadow-xl relative">
-          <div className="absolute -top-3 right-6 bg-gradient-to-r from-amber-400 to-amber-500 text-black text-[11px] font-black px-3 py-0.5 rounded-full uppercase tracking-wider shadow-md">
+        <div className="mt-6 p-6 rounded-2xl bg-gradient-to-br from-emerald-500/10 via-zinc-900/90 to-zinc-900/90 border-2 border-emerald-500/40 shadow-xl relative">
+          <div className="absolute -top-3 right-6 bg-gradient-to-r from-emerald-400 to-cyan-400 text-black text-[11px] font-black px-3 py-0.5 rounded-full uppercase tracking-wider shadow-md font-mono">
             Mais Escolhido
           </div>
 
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
             <div>
-              <span className="text-xs font-bold text-amber-400 uppercase tracking-wider block">
+              <span className="text-xs font-bold text-emerald-400 uppercase tracking-wider block font-mono">
                 Plano Starter
               </span>
-              <h3 className="text-lg font-bold text-white mt-0.5">
+              <h3 className="text-lg font-bold text-white mt-0.5 font-display tracking-tight">
                 Para Advogados de Execução &amp; Analistas de Compliance
               </h3>
               <p className="text-xs text-zinc-400 mt-1 max-w-md">

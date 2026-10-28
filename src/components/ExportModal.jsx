@@ -365,11 +365,11 @@ export function ExportModal({ isOpen, onClose, nodes = [], edges = [], investiga
         </button>
 
         <div className="flex items-center gap-3">
-          <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-amber-500/15 border border-amber-500/30 text-amber-400">
+          <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-500/15 border border-emerald-500/30 text-emerald-400">
             <Download className="h-5 w-5" />
           </div>
           <div>
-            <h3 className="text-base font-bold text-zinc-100">Exportar Dossiê Forense</h3>
+            <h3 className="text-base font-bold text-zinc-100 font-display tracking-tight">Exportar Dossiê Forense</h3>
             <p className="text-xs text-zinc-400">Gere relatórios completos de vínculos e processos</p>
           </div>
         </div>
@@ -390,7 +390,7 @@ export function ExportModal({ isOpen, onClose, nodes = [], edges = [], investiga
           </div>
           <div>
             <span className="text-zinc-500 text-[10px] uppercase font-semibold block">Vínculos</span>
-            <span className="text-sm font-bold text-amber-400 font-mono">{edges.length}</span>
+            <span className="text-sm font-bold text-emerald-400 font-mono">{edges.length}</span>
           </div>
         </div>
 

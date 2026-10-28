@@ -86,7 +86,7 @@ export function AboutSourcesModal({ isOpen, onClose }) {
           <div className="flex items-center gap-3">
             <CataVinculoLogo size="sm" />
             <div>
-              <h2 className="text-lg font-bold text-white font-mono flex items-center gap-2">
+              <h2 className="text-lg font-bold text-white font-display tracking-tight flex items-center gap-2">
                 <span>Fontes de Consulta &amp; Legalidade</span>
               </h2>
               <p className="text-xs text-zinc-400 font-mono">

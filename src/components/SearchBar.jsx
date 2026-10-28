@@ -221,9 +221,9 @@ export function SearchBar({
         <div className="relative z-10 mb-7 flex flex-col items-center justify-center space-y-3">
           <CataVinculoLogo size="lg" />
           
-          <h1 className="text-4xl md:text-5xl font-black tracking-tight text-white flex items-center justify-center gap-2 font-mono">
+          <h1 className="text-4xl md:text-5xl font-black tracking-tight text-white flex items-center justify-center gap-2 font-display uppercase">
             <span>Cata</span>
-            <span className="text-emerald-400 drop-shadow-[0_0_20px_rgba(0,255,157,0.35)]">Vínculo</span>
+            <span className="text-emerald-400 drop-shadow-[0_0_20px_rgba(0,255,135,0.45)]">Vínculo</span>
           </h1>
 
           <p className="text-xs md:text-sm text-zinc-400 font-mono tracking-wide">

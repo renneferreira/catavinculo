@@ -63,19 +63,19 @@ export function CataVinculoLogo({ size = 'default', showText = false, subtitle =
         </div>
       </div>
 
-      {/* Tipografia da Marca (Opcional) */}
+      {/* Tipografia da Marca Curada (Anti-Default: Syne Display) */}
       {showText && (
         <div className="flex flex-col text-left">
-          <div className="flex items-center gap-1.5">
-            <span className={`${current.text} font-black tracking-tight text-white font-mono`}>
+          <div className="flex items-center gap-1">
+            <span className={`${current.text} font-black tracking-tight text-white font-display uppercase`}>
               Cata
             </span>
-            <span className={`${current.text} font-black tracking-tight text-emerald-400 font-mono drop-shadow-[0_0_12px_rgba(0,255,157,0.4)]`}>
+            <span className={`${current.text} font-black tracking-tight text-emerald-400 font-display uppercase drop-shadow-[0_0_16px_rgba(0,255,135,0.45)]`}>
               Vínculo
             </span>
           </div>
           {subtitle && (
-            <p className={`${current.sub} text-zinc-400 font-mono tracking-tight`}>
+            <p className={`${current.sub} text-zinc-400 font-mono tracking-wider uppercase text-[9px] opacity-80`}>
               {subtitle}
             </p>
           )}

@@ -48,7 +48,7 @@ export const PersonNode = memo(({ data, selected }) => {
 
       {/* Nome */}
       <div className="mt-3">
-        <h4 className="text-sm font-bold text-zinc-100 line-clamp-2 leading-snug tracking-tight">
+        <h4 className="text-sm font-bold text-zinc-100 line-clamp-2 leading-snug tracking-tight font-display">
           {nome}
         </h4>
         <div className="flex items-center gap-1.5 mt-1 text-xs text-emerald-300 font-medium">

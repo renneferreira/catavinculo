@@ -133,7 +133,7 @@ export function DossierModal({
                 Módulo Forense Especializado
               </span>
             </div>
-            <h2 id="dossier-modal-title" className="text-xl font-extrabold tracking-tight text-white mt-1.5 flex items-center gap-2">
+            <h2 id="dossier-modal-title" className="text-xl font-extrabold tracking-tight text-white mt-1.5 flex items-center gap-2 font-display">
               <FileText className="h-5 w-5 text-emerald-400" />
               <span>Dossiê Investigativo para Petição</span>
             </h2>

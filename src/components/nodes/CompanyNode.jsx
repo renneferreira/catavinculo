@@ -150,7 +150,7 @@ export const CompanyNode = memo(({ data, selected }) => {
 
       {/* Razão Social & Nome Fantasia */}
       <div className="mt-3">
-        <h4 className="text-sm font-bold text-zinc-100 line-clamp-2 leading-snug tracking-tight">
+        <h4 className="text-sm font-bold text-zinc-100 line-clamp-2 leading-snug tracking-tight font-display">
           {razaoSocial}
         </h4>
         {nomeFantasia && (
